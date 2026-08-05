@@ -11,7 +11,7 @@ Act as all of the following at the same time:
 - Creative Director for enterprise SaaS
 - Accessibility and performance reviewer
 
-Your task is to implement, inside the existing repository, a complete premium marketing landing page for an Academic ERP platform.
+Your task is to **implement**, inside the existing repository, a complete premium marketing landing page for an Academic ERP platform.
 
 Do not return a generic mockup, a loose concept, pseudocode, an isolated HTML file, or a visual approximation. Work directly with the conventions, components, architecture, routing, assets, design tokens, and coding standards already present in the repository.
 
@@ -39,7 +39,7 @@ Before modifying code, inspect the repository and identify:
 - Do not replace the existing framework, renderer, router, bundler, package manager, or project structure.
 - Do not migrate the repository to another stack.
 - Do not rewrite configuration files without a real implementation need.
-- Do not overwrite or redesign the color system in global.css.
+- Do not overwrite or redesign the color system in `global.css`.
 - Do not introduce a second design system.
 - Do not create a parallel set of color variables.
 - Do not hardcode hexadecimal, RGB, HSL, OKLCH, or named palette colors in page components.
@@ -52,7 +52,7 @@ Before modifying code, inspect the repository and identify:
 - Do not add a dependency when the same result can be achieved with the repository's current dependencies.
 - Framer Motion is explicitly allowed for animation. Use it as the only dedicated animation dependency.
 
-If the repository already contains a product name, logo, navigation model, contact route, demo route, or authentication route, use those values. Use Nexus ERP only as a fallback when the repository does not define a brand name.
+If the repository already contains a product name, logo, navigation model, contact route, demo route, or authentication route, use those values. Use **Nexus ERP** only as a fallback when the repository does not define a brand name.
 
 ---
 
@@ -117,7 +117,7 @@ The story must move through this sequence:
 
 Use the repository's established locale.
 
-If the repository does not establish a locale, use neutral Latin American Spanish for all visible copy.
+If the repository does not establish a locale, use **neutral Latin American Spanish** for all visible copy.
 
 The voice must be:
 
@@ -164,13 +164,46 @@ The experience must be:
 
 ### Visual principles
 
-1. Strong information hierarchy
-2. Controlled density
-3. Surface restraint
-4. Flat composition
-5. Precise geometry
-6. Product credibility
-7. Editorial composition
+1. **Strong information hierarchy**
+   - One dominant message per viewport.
+   - Clear distinction between eyebrow, title, supporting copy, metadata, and action.
+   - No section may look like a collection of equally weighted blocks.
+
+2. **Controlled density**
+   - Marketing copy receives generous space.
+   - Product interfaces use realistic enterprise density.
+   - Avoid both empty decorative expanses and cramped dashboards.
+
+3. **Surface restraint**
+   - Use the repository's background and surface tokens.
+   - Separate layers primarily with borders, spacing, subtle elevation tokens, and tonal contrast already present in the design system.
+   - Do not solve every grouping problem with a rounded card.
+
+4. **Flat composition**
+   - No glossy 3D objects.
+   - No floating laptops or phones.
+   - No perspective device mockups.
+   - No decorative glass panels.
+   - No giant blurred color blobs.
+   - No neon glow aesthetic.
+   - No visible heavy gradients.
+
+5. **Precise geometry**
+   - Align all major content to a consistent container and grid.
+   - Use shared vertical section spacing.
+   - Use the radius scale already defined by the repository.
+   - Avoid excessive pill shapes.
+
+6. **Product credibility**
+   - Product visuals must resemble real ERP workflows.
+   - Tables, statuses, filters, charts, dates, roles, and actions must be plausible.
+   - Do not display meaningless dashboard numbers solely for decoration.
+
+7. **Editorial composition**
+   - Alternate dense product moments with quieter narrative moments.
+   - Use asymmetry intentionally.
+   - Avoid centered text in every section.
+   - Avoid repeating the same left-copy/right-image layout.
 
 ---
 
@@ -217,9 +250,11 @@ Do not use:
 
 Use no more than these three reusable surface families across the page:
 
-1. Base surface — page-level or section-level background.
-2. Inset surface — product UI, nested panels, tables, filters, and controls.
-3. Emphasis surface — the most important CTA or highlighted product state.
+1. **Base surface** — page-level or section-level background.
+2. **Inset surface** — product UI, nested panels, tables, filters, and controls.
+3. **Emphasis surface** — the most important CTA or highlighted product state.
+
+A “surface family” may have compact and spacious density variants, but must not become a new unrelated card style.
 
 ### Typography
 
@@ -341,33 +376,33 @@ Use the following default Spanish copy when no approved repository content exist
 
 **Eyebrow**
 
-ERP académico para instituciones que operan a escala
+`ERP académico para instituciones que operan a escala`
 
 **Headline**
 
-Toda la institución, operando como un solo sistema.
+`Toda la institución, operando como un solo sistema.`
 
 **Supporting copy**
 
-Conecta admisiones, matrícula, gestión académica, finanzas, personas y analítica en una plataforma gobernada, segura y preparada para múltiples sedes.
+`Conecta admisiones, matrícula, gestión académica, finanzas, personas y analítica en una plataforma gobernada, segura y preparada para múltiples sedes.`
 
 **Primary CTA**
 
-Solicitar demostración
+`Solicitar demostración`
 
 **Secondary CTA**
 
-Explorar la plataforma
+`Explorar la plataforma`
 
 **Trust line**
 
-Implementación por etapas · Control por roles · Trazabilidad institucional
+`Implementación por etapas · Control por roles · Trazabilidad institucional`
 
 Do not add more than two primary actions.
 
 ### Product composition
 
-Build a native component composition called conceptually InstitutionCommandCenter. It must be code, not an image.
+Build a native component composition called conceptually `InstitutionCommandCenter`. It must be code, not an image.
 
 It must include:
 
@@ -375,8 +410,8 @@ It must include:
 2. A top context row with institution, period, search, notification, and user controls.
 3. A primary KPI strip showing plausible institutional metrics:
    - estudiantes activos
-   - matrícula completada
-   - recaudación del periodo
+   - avance de matrícula
+   - cobranza del periodo
    - incidencias críticas
 4. A central enrollment-flow visualization.
 5. A compact agenda or academic calendar.
@@ -388,13 +423,13 @@ It must include:
 
 Use believable example data, such as:
 
-- Periodo: 2026-II
-- Estudiantes activos: 18,420
-- Matrícula completada: 86.4%
-- Recaudación del periodo: S/ 12.8 M
-- Incidencias críticas: 3
-- Workflow: Validación de expediente
-- Statuses: En curso, Observado, Completado, Pendiente
+- Periodo: `2026-II`
+- Estudiantes activos: `18,420`
+- Matrícula completada: `86.4%`
+- Recaudación del periodo: `S/ 12.8 M`
+- Incidencias críticas: `3`
+- Workflow: `Validación de expediente`
+- Statuses: `En curso`, `Observado`, `Completado`, `Pendiente`
 
 All example content must be stored in a typed data object, not scattered across JSX.
 
@@ -443,7 +478,7 @@ Create credibility without a generic “trusted by” logo cloud.
 
 ### Default statement
 
-Diseñado para instituciones con múltiples sedes, miles de estudiantes y operaciones críticas.
+`Diseñado para instituciones con múltiples sedes, miles de estudiantes y operaciones críticas.`
 
 ### Default fictional institution names
 
@@ -488,11 +523,11 @@ Use specific examples:
 
 ### Supporting heading
 
-La complejidad no está en cada área. Está en todo lo que ocurre entre ellas.
+`La complejidad no está en cada área. Está en todo lo que ocurre entre ellas.`
 
 ### Supporting copy
 
-Cuando cada equipo opera con herramientas, criterios y datos distintos, la institución pierde velocidad, control y capacidad de respuesta.
+`Cuando cada equipo opera con herramientas, criterios y datos distintos, la institución pierde velocidad, control y capacidad de respuesta.`
 
 ### Interaction and motion
 
@@ -544,11 +579,11 @@ Do not display these as twelve equal cards.
 
 ### Heading
 
-Un modelo operativo conectado desde el primer contacto hasta el egreso.
+`Un modelo operativo conectado desde el primer contacto hasta el egreso.`
 
 ### Copy
 
-Cada evento actualiza el expediente institucional, activa reglas, asigna responsables y conserva una trazabilidad completa.
+`Cada evento actualiza el expediente institucional, activa reglas, asigna responsables y conserva una trazabilidad completa.`
 
 ### Interaction
 
@@ -558,11 +593,11 @@ Cada evento actualiza el expediente institucional, activa reglas, asigna respons
 
 ### Example automation by stage
 
-- Postulación: Validar documentos y asignar observaciones
-- Admisión: Generar resolución y notificar resultado
-- Matrícula: Confirmar pago, registrar carga y activar servicios
-- Progreso académico: Detectar riesgo y crear seguimiento
-- Egreso: Validar requisitos y emitir expediente final
+- Postulación: `Validar documentos y asignar observaciones`
+- Admisión: `Generar resolución y notificar resultado`
+- Matrícula: `Confirmar pago, registrar carga y activar servicios`
+- Progreso académico: `Detectar riesgo y crear seguimiento`
+- Egreso: `Validar requisitos y emitir expediente final`
 
 ---
 
@@ -576,9 +611,9 @@ Demonstrate platform breadth without a basic card grid.
 
 Build a three-part explorer:
 
-1. Left rail: module families.
-2. Center list: modules belonging to the selected family.
-3. Right preview: a contextual mini-interface representing the selected module.
+1. **Left rail:** module families.
+2. **Center list:** modules belonging to the selected family.
+3. **Right preview:** a contextual mini-interface representing the selected module.
 
 ### Module families and modules
 
@@ -623,7 +658,7 @@ Build a three-part explorer:
 
 ### Default selected module
 
-Use Matrícula as the initial selection.
+Use `Matrícula` as the initial selection.
 
 ### Module preview requirements
 
@@ -757,7 +792,9 @@ Create four capability chapters inside one section. Each chapter must have its o
 
 ### Chapter A — Workflow automation
 
-Heading: Automatiza procesos sin perder control institucional.
+**Heading**
+
+`Automatiza procesos sin perder control institucional.`
 
 Show a rule builder or automation sequence with:
 
@@ -769,11 +806,13 @@ Show a rule builder or automation sequence with:
 
 Example flow:
 
-Pago confirmado → validar requisitos → registrar matrícula → activar servicios → notificar al estudiante
+`Pago confirmado → validar requisitos → registrar matrícula → activar servicios → notificar al estudiante`
 
 ### Chapter B — Unified institutional record
 
-Heading: Un expediente confiable para cada estudiante.
+**Heading**
+
+`Un expediente confiable para cada estudiante.`
 
 Show one student record composed of:
 
@@ -789,7 +828,9 @@ Do not use a profile card collage. Use a structured record layout.
 
 ### Chapter C — Role-based workspaces
 
-Heading: Cada equipo ve lo que necesita y actúa con el contexto correcto.
+**Heading**
+
+`Cada equipo ve lo que necesita y actúa con el contexto correcto.`
 
 Show role transitions for:
 
@@ -804,7 +845,9 @@ The selected role must update actions and information density.
 
 ### Chapter D — Integration and extensibility
 
-Heading: Conecta el ecosistema existente sin crear otra isla de información.
+**Heading**
+
+`Conecta el ecosistema existente sin crear otra isla de información.`
 
 Show a clean integration topology connected to:
 
@@ -855,7 +898,7 @@ Do not claim certifications that are not provided by the repository or user cont
 
 ### Heading
 
-Seguridad integrada en cada operación, permiso y cambio.
+`Seguridad integrada en cada operación, permiso y cambio.`
 
 ### Evidence strip
 
@@ -871,7 +914,7 @@ Display concise proof concepts such as:
 
 Selecting a security layer highlights the related controls and shows a concise example event, such as:
 
-Cambio de cuenta bancaria aprobado por dos responsables · 04 ago 2026 · 10:42
+`Cambio de cuenta bancaria aprobado por dos responsables · 04 ago 2026 · 10:42`
 
 ---
 
@@ -883,7 +926,7 @@ Show that analytics are connected to institutional decisions, not added as decor
 
 ### Heading
 
-De la operación diaria a decisiones institucionales oportunas.
+`De la operación diaria a decisiones institucionales oportunas.`
 
 ### Composition
 
@@ -936,11 +979,11 @@ Provide executive-level validation without a generic three-testimonial card row.
 
 ### Default demonstration testimonial
 
-Antes consolidábamos información académica y financiera durante varios días. Ahora cada área trabaja sobre el mismo contexto y la dirección puede revisar el estado de la institución sin esperar un cierre manual.
+`Antes consolidábamos información académica y financiera durante varios días. Ahora cada área trabaja sobre el mismo contexto y la dirección puede revisar el estado de la institución sin esperar un cierre manual.`
 
 Attribution:
 
-Mariana Salazar · Directora de Transformación Digital · Universidad Metropolitana del Pacífico
+`Mariana Salazar · Directora de Transformación Digital · Universidad Metropolitana del Pacífico`
 
 Supporting proof themes:
 
@@ -970,12 +1013,12 @@ Resolve realistic enterprise purchase and implementation objections.
 
 ### Required questions
 
-1. ¿La plataforma puede implementarse por etapas?
-2. ¿Cómo se adapta a instituciones con múltiples sedes?
-3. ¿Puede integrarse con los sistemas que ya utilizamos?
-4. ¿Cómo se gestionan roles, permisos y trazabilidad?
-5. ¿La plataforma admite procesos académicos diferentes por unidad?
-6. ¿Qué información se necesita para una demostración?
+1. `¿La plataforma puede implementarse por etapas?`
+2. `¿Cómo se adapta a instituciones con múltiples sedes?`
+3. `¿Puede integrarse con los sistemas que ya utilizamos?`
+4. `¿Cómo se gestionan roles, permisos y trazabilidad?`
+5. `¿La plataforma admite procesos académicos diferentes por unidad?`
+6. `¿Qué información se necesita para una demostración?`
 
 ### Answer requirements
 
@@ -987,7 +1030,7 @@ Resolve realistic enterprise purchase and implementation objections.
 
 - Use the existing accordion primitive.
 - Correct button semantics.
-- aria-expanded and controlled relationships.
+- `aria-expanded` and controlled relationships.
 - Keyboard interaction.
 - Visible focus.
 - No layout shift that moves the active trigger out of view.
@@ -1010,13 +1053,21 @@ Use a wide editorial closing section, not a generic centered CTA card.
 
 ### Default copy
 
-Heading: Convierta la complejidad institucional en una operación visible, conectada y gobernable.
+**Heading**
 
-Supporting copy: Conozca cómo la plataforma puede adaptarse a su modelo académico, estructura organizacional y prioridades de implementación.
+`Convierta la complejidad institucional en una operación visible, conectada y gobernable.`
 
-Primary action: Solicitar demostración
+**Supporting copy**
 
-Secondary action: Hablar con un especialista
+`Conozca cómo la plataforma puede adaptarse a su modelo académico, estructura organizacional y prioridades de implementación.`
+
+**Primary action**
+
+`Solicitar demostración`
+
+**Secondary action**
+
+`Hablar con un especialista`
 
 ### Next-step panel
 
@@ -1026,7 +1077,7 @@ Show three steps:
 2. Demostración según sus procesos
 3. Hoja de ruta de implementación
 
-All actions must point to real repository routes or handlers. If no route exists, create the correct in-app navigation target according to the repository's routing conventions rather than using href="#".
+All actions must point to real repository routes or handlers. If no route exists, create the correct in-app navigation target according to the repository's routing conventions rather than using `href="#"`.
 
 ---
 
@@ -1084,7 +1135,7 @@ Use centralized duration and easing constants. Prefer the repository's existing 
 
 ### Required reduced-motion behavior
 
-- Respect prefers-reduced-motion.
+- Respect `prefers-reduced-motion`.
 - Remove translation, blur, and stagger when reduced motion is enabled.
 - Preserve state changes without animation.
 - Never hide important content behind animation completion.
@@ -1121,3 +1172,417 @@ Do not design desktop first and then simply stack everything vertically.
 - Prevent content from stretching beyond readable or useful line lengths.
 - Product visuals may use additional width, but copy should remain bounded.
 - Do not create a nearly empty center inside ultra-wide screens.
+
+### Desktop and laptop
+
+- Maintain the 12-column narrative grid.
+- Keep product UI readable at common laptop heights.
+- Avoid hero content that requires scrolling before the primary action appears.
+
+### Tablet
+
+- Reduce simultaneous columns.
+- Preserve editorial hierarchy.
+- Collapse secondary rails intentionally.
+- Maintain usable controls and readable charts.
+
+### Mobile
+
+- Prioritize title, supporting copy, primary CTA, and one strong product proof.
+- Convert complex horizontal diagrams into vertical sequences.
+- Convert module explorers into disclosure patterns.
+- Convert wide tables into meaningful records or controlled horizontal scrolling.
+- Keep touch targets compliant.
+- Prevent horizontal page overflow.
+- Avoid tiny labels, microscopic charts, or unreadable mini dashboards.
+- Do not hide essential content solely because the viewport is small.
+
+### Required viewport review
+
+Review at minimum:
+
+- 360px
+- 390px
+- 768px
+- 1024px
+- 1280px
+- 1440px
+- an ultra-wide desktop width
+
+Fix layout issues at the component level rather than adding scattered one-off breakpoint patches.
+
+---
+
+## 10. ACCESSIBILITY
+
+Target WCAG 2.2 AA where applicable.
+
+### Requirements
+
+- Semantic page landmarks.
+- One logical `h1`.
+- Ordered heading hierarchy.
+- Keyboard-accessible navigation and controls.
+- Visible token-backed focus states.
+- Correct labels for icon-only controls.
+- Correct accessible names for tabs, accordions, menus, selectors, and charts.
+- Sufficient contrast using the repository's theme tokens.
+- Meaning must not depend on color alone.
+- Decorative icons must be hidden from assistive technology.
+- Statuses must include text.
+- Touch targets must be adequately sized.
+- Reduced motion must be supported.
+- No focus loss during animated transitions.
+- No content hidden solely on hover.
+
+Use real buttons for actions and real links for navigation.
+
+---
+
+## 11. COMPONENT ARCHITECTURE
+
+Follow the existing repository's file and folder conventions. Do not impose a foreign structure.
+
+At minimum, separate the implementation into:
+
+### Page-level composition
+
+- landing page entry
+- marketing header
+- footer
+
+### Section components
+
+- hero
+- trust rail
+- fragmentation story
+- connected lifecycle
+- module explorer
+- product workspace
+- capabilities
+- security architecture
+- analytics
+- customer proof
+- FAQ
+- final CTA
+
+### Reusable marketing primitives
+
+Create these only when equivalent components do not already exist:
+
+- section shell
+- section heading
+- eyebrow
+- action group
+- metric display
+- status badge mapping
+- product surface
+- subtle separator
+- visually hidden text helper
+
+### Data separation
+
+Store static demonstration data in typed configuration objects or data modules:
+
+- navigation
+- institutional logos
+- lifecycle stages
+- module catalog
+- product workspace modes
+- capabilities
+- security controls
+- analytics datasets
+- testimonials
+- FAQ
+- footer groups
+
+Do not scatter repeated arrays and copy across JSX.
+
+### Type quality
+
+- Use strict types.
+- Prefer discriminated unions for variant-heavy demo data.
+- Do not use `any`.
+- Do not duplicate domain types.
+- Keep component APIs minimal and explicit.
+- Avoid over-engineered generic abstractions that reduce readability.
+
+---
+
+## 12. PRODUCT UI REALISM
+
+All embedded product visuals must follow these rules:
+
+- Use realistic names, periods, dates, amounts, statuses, and institutional concepts.
+- Use consistent locale formatting.
+- Use consistent domain terminology.
+- Keep data relationships coherent across metrics, charts, tables, and activity feeds.
+- Do not show mutually contradictory numbers.
+- Do not use random decorative charts.
+- Do not show controls without a visible purpose.
+- Avoid excessive badges.
+- Avoid icon-only meaning.
+- Do not place every control inside a pill.
+- Do not use more than one dominant accent action in a local product view.
+
+### Suggested shared demo context
+
+Use one coherent fictional institution across the page:
+
+- Institution: `Universidad Metropolitana del Pacífico`
+- Active period: `2026-II`
+- Campuses: `Lima Centro`, `Lima Norte`, `Arequipa`
+- Students: approximately `18,420`
+- Main programs: Ingeniería, Negocios, Salud, Educación
+
+This context must remain consistent wherever it appears.
+
+---
+
+## 13. PERFORMANCE AND ENGINEERING QUALITY
+
+### Performance
+
+- Keep the initial bundle disciplined.
+- Lazy-load heavy non-critical product demonstrations or chart code when beneficial and compatible with the current architecture.
+- Do not lazy-load above-the-fold text or critical navigation.
+- Avoid unnecessary re-renders.
+- Memoize only when measurable or structurally justified.
+- Do not use oversized images.
+- Do not create large decorative SVG backgrounds.
+- Avoid excessive DOM nesting.
+- Avoid dozens of independently observed motion elements.
+- Use one shared viewport strategy for section reveals.
+
+### Code quality
+
+- No monolithic page component.
+- No duplicated markup for responsive variants when CSS composition can solve the problem.
+- No unused imports.
+- No dead components.
+- No `TODO` comments.
+- No console errors or warnings.
+- No invalid DOM nesting.
+- No unstable list keys.
+- No fake links.
+- No unhandled interactive controls.
+- No inline static styles.
+- No magic values repeated across components.
+
+### Repository validation
+
+Before completion, run the repository's existing:
+
+- formatter
+- linter
+- type checker
+- relevant tests
+- production build
+
+Fix all errors introduced by the implementation. Do not disable rules to make the build pass.
+
+---
+
+## 14. FORBIDDEN DESIGN PATTERNS
+
+Reject and redesign any part of the page that uses these patterns:
+
+- generic SaaS hero with centered title and floating dashboard screenshot
+- floating laptop or browser frame
+- repetitive three-card feature grids
+- twelve modules shown as identical icon cards
+- gradient-filled headline text
+- giant blurred decorative spheres
+- excessive glassmorphism
+- excessive drop shadows
+- excessive rounded containers
+- every section placed inside a bordered card
+- icons inside colored square tiles for every feature
+- autoplay marquees
+- autoplay testimonial carousels
+- decorative particle backgrounds
+- random abstract SVG illustrations
+- fake terminal windows unrelated to the product
+- ungrounded “AI” claims
+- oversized empty sections created only to look premium
+- centered copy in every section
+- repeated left-copy/right-image layouts
+- duplicated interaction patterns with different labels
+- multiple competing accent actions
+- arbitrary color values outside the repository's design tokens
+- replacement of the repository's `global.css` theme
+
+---
+
+## 15. VISUAL DIFFERENTIATION RULES
+
+Every section must be recognizable by composition, not by a different color theme.
+
+Use this exact differentiation strategy:
+
+- Header: compact navigation row.
+- Hero: editorial copy plus live command center.
+- Trust: typographic institutional rail.
+- Problem: operational handoff map.
+- Solution: lifecycle rail with connected systems.
+- Modules: three-pane explorer.
+- Product preview: full-width operational workspace.
+- Capabilities: four editorial product chapters.
+- Security: layered governance architecture.
+- Analytics: asymmetric decision workspace.
+- Testimonials: one dominant quote plus supporting proof.
+- FAQ: split editorial and accordion layout.
+- Final CTA: editorial close plus next-step process.
+- Footer: structured enterprise information hierarchy.
+
+Do not create visual differentiation by changing colors arbitrarily.
+
+---
+
+## 16. CONTENT ACCEPTANCE CRITERIA
+
+The visible content must:
+
+- name specific institutional workflows
+- use consistent academic ERP terminology
+- explain outcomes rather than list vague features
+- speak to executive and operational audiences
+- avoid invented compliance certifications
+- avoid invented customer metrics
+- avoid unsupported technical claims
+- use consistent institution, period, campuses, amounts, and status labels
+- contain no Lorem Ipsum
+- contain no filler copy
+- contain no unfinished labels
+- contain no spelling inconsistencies
+
+---
+
+## 17. DESIGN ACCEPTANCE CRITERIA
+
+The result is acceptable only when:
+
+1. The first viewport clearly explains the product and shows credible product proof.
+2. The page feels like one system rather than unrelated sections.
+3. No section resembles a stock Tailwind landing template.
+4. The design remains restrained without becoming visually empty.
+5. Product interfaces are believable and readable.
+6. No section relies on a generic card grid as its principal composition.
+7. Existing repository colors and tokens are respected.
+8. Typography and spacing are consistent.
+9. There are no random radii, shadows, or border treatments.
+10. Motion is subtle, purposeful, and reduced-motion safe.
+11. Mobile layouts are intentionally redesigned.
+12. Interactive demos actually change visible state.
+13. All navigation and CTA controls are functional.
+14. Focus states are visible and correct.
+15. The final page has no obvious AI-generated repetition.
+
+---
+
+## 18. MANDATORY IMPLEMENTATION PROCESS
+
+Execute the work in this order:
+
+### Phase 1 — Audit
+
+- Inspect the repository.
+- Identify the active design tokens and reusable primitives.
+- Identify the correct route and page integration point.
+- Identify existing content and brand assets.
+
+### Phase 2 — Architecture
+
+- Define the page component tree.
+- Define typed data models.
+- Map each section to existing primitives.
+- Define the responsive transformation of each complex composition.
+- Define shared Framer Motion variants.
+
+### Phase 3 — Foundation
+
+- Implement or reuse section shell, heading, actions, surfaces, status mapping, and motion helpers.
+- Do not redesign global color tokens.
+
+### Phase 4 — Above the fold
+
+- Implement header.
+- Implement hero copy.
+- Implement the interactive command center.
+- Validate desktop and mobile before continuing.
+
+### Phase 5 — Narrative and product proof
+
+- Implement trust rail.
+- Implement problem map.
+- Implement lifecycle solution.
+- Implement module explorer.
+- Implement interactive workspace.
+
+### Phase 6 — Enterprise proof
+
+- Implement capabilities.
+- Implement security architecture.
+- Implement analytics.
+- Implement customer proof.
+
+### Phase 7 — Conversion
+
+- Implement FAQ.
+- Implement final CTA.
+- Implement footer.
+- Connect all real routes and actions.
+
+### Phase 8 — Quality review
+
+- Review visual consistency.
+- Review interaction behavior.
+- Review responsiveness.
+- Review accessibility.
+- Review performance.
+- Run repository validation commands.
+
+### Phase 9 — Second design iteration
+
+Do not stop after the first working implementation.
+
+Perform a second pass specifically to:
+
+- remove repeated compositions
+- simplify unnecessary wrappers
+- improve alignment
+- improve text measure
+- improve section rhythm
+- remove excessive cards
+- refine product UI density
+- refine motion timing
+- improve mobile transformations
+- fix accessibility issues
+- reduce code duplication
+- remove anything that feels template-generated
+
+Only present the implementation after the second iteration is complete.
+
+---
+
+## 19. FINAL RESPONSE REQUIREMENTS FOR THE CODING AGENT
+
+After implementing the page, provide a concise completion report containing:
+
+1. Main files created or modified.
+2. Existing repository primitives reused.
+3. Interactive sections implemented.
+4. Responsive adaptations completed.
+5. Accessibility measures completed.
+6. Validation commands run and their result.
+7. Any repository limitation that prevented a requested behavior.
+
+Do not provide only an explanation or an implementation plan. The repository must contain the finished implementation.
+
+---
+
+# FINAL DIRECTIVE
+
+Create an Academic ERP landing page that feels like a mature, high-value enterprise product: precise, calm, technically credible, visually restrained, and operationally believable.
+
+Use the repository as the source of truth for stack, colors, typography, spacing, components, and global styles. Preserve its architecture. Use Framer Motion only for purposeful interaction and transitions. Do not leave visual or functional decisions unresolved. Do not fall back to generic SaaS patterns. Implement the complete page, review it critically, improve it in a second pass, and verify that it is production-ready.
